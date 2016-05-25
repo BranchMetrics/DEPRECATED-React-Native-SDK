@@ -56,6 +56,10 @@ class Branch {
     rnBranch.getFirstReferringParams(callback);
   };
 
+  onNewReferringParams = (callback) => {
+    nativeEventEmitter.addListener('RNBranch.initSessionFinished', callback);
+  };
+
   setIdentity = (identity) => {
     rnBranch.setIdentity(identity);
   };
