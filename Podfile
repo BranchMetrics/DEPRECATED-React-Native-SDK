@@ -2,5 +2,6 @@ platform :ios, '7.1'
 
 xcodeproj 'RNBranch/RNBranch.xcodeproj'
 
-pod 'Branch'
-
+target 'RNBranch' do
+	pod 'Branch'
+end
